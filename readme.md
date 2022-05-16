@@ -1,2 +1,2 @@
 # cursos-full-stack
-cursos par ir mejorano y practicando html css y javascript
+cursos par ir mejorando y practicando html, css y javascript
