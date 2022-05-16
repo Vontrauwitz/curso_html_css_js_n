@@ -1,0 +1,16 @@
+/*vamos a ver otros dos selectores "id" y "class" el " id" nos sirve cuando queremos entregar un identificador unico a un elemento de html, y las clases nos van a servir cuando nosotros queremos hacer una composición de estilos sobre un elemento html o tambien cuando queremos compartir este estilo a lo largo de varios elementos o etiquetas de html */
+body{
+    background-color: #efefef;
+}
+/*para poder seleccionar elementos por su id nosotros debemos utilizar el numeral "#" y seguido de la etiqueta que queremos seleccionar en este caso el "id " de parrafo*/
+#parrafo {
+    color: #ff0000;
+}
+p{ /*este es un ejemplo mio para poder entender para que sirve id*/
+   color: blue; 
+}
+/*para seleccionar las clases es muy parecido pero en lugar de "#" utilizamos "." mas el nombre de la clase.*/
+.etiqueta{
+ color: #00aa00;   
+}
+/*de esta forma podemos selecionar elementos por su id y tambien podemos selecionar por su clase, cuando los seleccionamos por su id es por que queremos que "x" elemento de html tenga un valor unico exista un unico elemento con ese id, en cambio cuando usamos el selecto de clase podemos usarlo en muchos elementos, por lo que nosotros vamos a preferir utilizar clase, y por lo general vamos a hacer configuraciones basicas para los elementos de html para darles un estilo como para las listas o las tablas(investigar mas en mozila, etc por que no me quedo muy claro)*/

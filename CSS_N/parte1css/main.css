@@ -1,3 +1,5 @@
 body { /*las etiquetas en css se llaman igual en html*/
-background-color: #eeeeee; /*css usa color hexadecimal, bacgroundcolor sirve para cambiar el fondo, color para cambiar el color de las fuentes*/ 
+background-color: #eeeeee; /*css usa color hexadecimal, bacgroundcolor sirve para cambiar el fondo,(https://www.rapidtables.org/web/color/RGB_Color.html)*/
+color: #ff0000; /*color cambia el color de las fuentes*/
+/*Entonces para asignarle a una etiqueta en particular que en este caso es "body" un estilo lo hacemos con el mismo nombre de la etiqueta de html y todo el contenido de esta etiqueta va a empezar a tomar las propiedades del "body" de css para poder cambiar el color de fondo a un gris muy tenue usamos la propiedad de "background-color" y para poder cambiar el texto de color usamos la propiedad de "color" los valores que tenemos que entregarle a "background-color" y a "color" son en formato hexadecimal (sumbolo de numero + seis caracteres, pueden ser del 0 al 9 y de la "a" a la "f" en cualquier combinación*/
 }

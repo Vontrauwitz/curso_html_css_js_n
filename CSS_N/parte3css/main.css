@@ -1,0 +1,24 @@
+body{
+    background-color: #eee; /*en este caso usamos 3 de las 6 por que los coloes hexadecimales se pueden hacer con 3 letras si "eee" lo queremos expresar en 6 seria "eeeeee" en 3 digitos solo nos deja expresar completos no combinados como "efeeee" es por parejas "ee ee ee" ej: "eef" seria "ee ee ff" seria un gris azulado leve*/
+}
+
+.caja{ /* aqui creamos la clase caja, y le ponemos la propiedad de margin, esto es para darle un margen al div que pusimos en html osea que va a tener 8px en las (4 direcciones, **checar esto por que en el ej de div genera una dif de 16px y solo estan aplicados 8 de lado izq y der, pero arriba y abajo no), px=pixeles*/
+    margin: 8px; /*margines un borde invisible pero bordea por fuera de la caja, esta aplicado al div, por lo tanto va a generar una separación entre el contenico de la caja div yy la caja superior que es body en el inspector de google, puedes ver como se solapa una pequeña diferencia entre body y div que serian 16px 8 de cada lado*/
+    padding: 8px; /*pading es un borde invisible pero bordea por dentro de la caja*/
+    border-style: solid;/*border-style es la tercera propiedad que veremos es el borde de la caja el cual esta entre margin y padding, seria como el contorno y tiene varias porpiedades*/
+    /*solid: le da un color solido al borde de la caja por defecto es negro */
+    /*dashed: le da una linea punteada al borde de la caja por defecto es negro*/
+    /*dotted*: le da una linea punteada pero con puntitos mas cortos por defecto es negro*/
+    /*double: le da una doble linea dolida al borde de la caja por defecto es negra*/
+    /*groove: le da un aspecto tallado al borde de la caja*/
+    /*ridgele le un aspecto como de groove pero al revez*/
+    /*inset: le da un aspecto como de hundido*/ 
+    /*outset: le da un aspecto como de levantado*/
+    /*none: es por default en todos los contenidos y es ninguno*/
+    /*hidden: es oculto*/
+    /*podemos hacer un mix entre varias ej: dotted dashed solid double solo es poner une espacio entre cada una el primero le asigna al borde superior, luego der, luego abajo y al final izq*/
+    border-width: 8px; /*es el grosor en px del borde de la caja*/
+    border-color: #faa; /*es para darle color al borde*/
+    background-color: #aaf;
+
+}
