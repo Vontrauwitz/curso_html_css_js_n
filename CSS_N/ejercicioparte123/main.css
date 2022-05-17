@@ -1,0 +1,27 @@
+bodY{
+    background-color: #eee;
+}
+.caja{
+background-color: #fff;
+padding: 4px;
+border-style: solid;
+border-width: 1px;
+border-color: #ccc;
+border-radius: 2px;
+border-top: solid 0px;
+width: 450px;
+
+
+}
+.aceptar{
+background-color: dodgerblue;
+border-style: none;
+color: #fff;
+padding: 4px;
+}
+.cancelar{
+    background-color: darkgrey;
+    border-style: none;
+    color: #fff;
+    padding: 4px;
+}

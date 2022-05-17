@@ -19,6 +19,15 @@ body{
     /*podemos hacer un mix entre varias ej: dotted dashed solid double solo es poner une espacio entre cada una el primero le asigna al borde superior, luego der, luego abajo y al final izq*/
     border-width: 8px; /*es el grosor en px del borde de la caja*/
     border-color: #faa; /*es para darle color al borde*/
+    border-left: 6px solid #afa ; /*con estos border-"left,top,botom y right" nosostros le asignamos un color a cada pedazo de marco (primero elegimos el ancho en pixeles luego el tipo de borde y luego el color*/
+    border-top: ; /*ojo: css tiene la particularidad si nosotros declaramos particularidades despues de haber declarado una va a tomar la ultima que hayamos declarado, en este caso habiamos declarado todo el marco d eun color y ahora declaramos una parte de otro color*/
+    /*border-bottom: ;
+    border-right: ;*/
+    border-radius: 8px; /*esta tiene la particularidad de que nos permite redondear los bordes, en medida de pixeles (simula en este caso que hay un circulo de 8px*/
     background-color: #aaf;
-
+    /*dento de las cosas muy importantes del modelos de caja son la altura y el ancho, yo puedo indicarle de una manera fija el ancho que yo quiero que tenga mi caja*/
+    height: 100px;
+    width: 100px;
+    color: #575; /*recordando es para cabiar el color de la fuente*/
+    
 }
