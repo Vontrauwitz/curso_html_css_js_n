@@ -5,6 +5,10 @@ body{
     display: inline; /*con esto hacemos que p que por defalut como bloque bajaba sea inline osea siga en la misma liena.*/
 /*} comentamos esto por que cambia el ejercicio*/
 
-#invisible { /*con esto hacemos invisible una etiqueta*/
+#invisible { /*con display: none; hacemos invisible una etiqueta*/
     display: none 
+}
+
+span{
+    display: block; /* con esto hacemos que sea block un inline*/
 }

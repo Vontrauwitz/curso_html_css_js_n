@@ -1,0 +1,18 @@
+body {
+    background-color: #eee;
+}
+p { /*las etiquetas por default traen un ancho de toda la pantalla (creo que aplica en block revisar) nosotros podemos definir que tenga un ancho maximocon: */
+    max-width:fit-content;  /*si achicamos la pantalla con max-width se ajusta, por que determina un ancho maximo mas no un minimo, sin embargo si usamos width el ancho va a ser fijo y la pantalla nos va a empezar a mostrar el escroll lateral */
+    /* por ejemplo aqui yo probe con fit_content y me lo ajusta al contenido */
+    background-color: #f00;
+    margin: auto; /*con esto ponemos un margen a la izq y der ajustable y con esto conseguimos que el contenido este centrado apesar del tamaño */
+    position: fixed;
+    left: 0px; /*por default viene estatic y es que los elemento se quedan en el mismo lugar estaticos donde los definimos*/
+ /* sin embargo podemos cambiar a posición relative e indica que este elemento va a tener una nueva posicion pero con respecto donde se encuentra el mismo (entiendo que desde el punto de origen donde lo tenemos con relativa si depuses le ponemos left o right en px podemos modificar hacia donde lo queremos exactamente)*/
+/*si lo quiero hacer al revez puedo usar numero negativo?? y right tambien?? investigar */
+/*las propiedades que puedo usar para moverlo son top, bottom, right y left, fixed= deja el contenido fijo en la pantalla no importando cuanto exista   */
+    top: 0px;  /* https://developer.mozilla.org/es/docs/Web/CSS/position */
+    bottom: 0px;
+    right: 15px; 
+}
+/*fixed se usa mucho en las paginas donde ponermos menus que se quedan pegados mientras el resto del sitio avanza, o menus donde pinchamos y se abren y se mantienen abiertos donde hacemos scroll para cambiar el contenido pero el menu segue ahi fijo*/
