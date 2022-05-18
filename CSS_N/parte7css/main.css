@@ -1,0 +1,29 @@
+BODY{
+    background-color: #eee;
+}
+
+table{
+    width: 100%; /*esto es para usar el 100% del espacio de la ventana */
+    background-color: white;
+    border-collapse: collapse; /*esto fue para quitar el espacio virtual entre celdas que quedaba blanco y no se veia unida(colapsan para que sean de 1 px o 0 px si no lo hemos definido)*/
+}
+
+/* nth-child even es para selecionar una fila si y una fila no "par o impar" " even or odd" en este caso en los tr*/
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th{ /*esto es para darle estilo a los th de la cabecera */
+    background-color: #4caf50;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

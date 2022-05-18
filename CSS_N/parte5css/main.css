@@ -1,0 +1,31 @@
+body{
+  background-color: #eee;
+}
+
+a{
+  color: hotpink;/*es el color que va a llevar el enlace si no hemos definido ninguna de las siguientes, este es el generico*/
+  background-color: #f00;/*tambien podemos poner fondo a los links*/
+  border: 1px solid #d00; /*en lugar de border color lo pusimos todo en la misma linea*/
+  padding: 10px;
+  margin: 15px; /*ojo en este ejemplo margin top lo quitamos por que el elemento no bajaba, mas adelante veremos como moverlo*/
+  border-radius: 4px;
+ }
+
+a:link {
+  color: pink; /*es el color cuando el enlace no ha sido utilizado */
+  text-decoration: none; /*en este caso quita el underline que viene por defecto en los enlaces*/
+}
+a:visited { /*es el color cuando el enlace ya ha sido utilizado */
+  color: white;
+}
+
+a:hover{ /*es el color cuando el mouse pasa sobre el enlace */ 
+  color: white;
+  text-decoration: underline; /*en este caso aparece el underline cuando pasamos sobre el enlace */
+  background-color: #f55; /*en este caso es un rojo mas claro cuando pasamos el mouse encima por ejemplo si usamos de fondo un color y en hoover uno mas claro o mas fuerte damos la impresión de ser un boton */
+}
+
+a:active{ /*es el color cuando el enlace cuando se le da click ojo si ponemos hoover abajo de active no se vera active */
+  color: black; /*tambien aqui podriamos agregar un text decoration segun sea nuestro diseño*/
+}
+

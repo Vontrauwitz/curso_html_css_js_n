@@ -1,0 +1,10 @@
+body{
+    background-color: #eee;
+}
+/*p{/*
+    display: inline; /*con esto hacemos que p que por defalut como bloque bajaba sea inline osea siga en la misma liena.*/
+/*} comentamos esto por que cambia el ejercicio*/
+
+#invisible { /*con esto hacemos invisible una etiqueta*/
+    display: none 
+}

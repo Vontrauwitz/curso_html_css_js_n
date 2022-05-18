@@ -1,0 +1,21 @@
+body{
+    background-color:#eee;
+}
+
+/*ul li {*/ /*esta forma de seleccionar elementos es nueva es cuando un elemento s encuentra dentro de otro y solo queremos darle rl formato al elemento interno en este caso li es un elemento de ul que es la lista */
+/*list-style-type: square; */ /* esto cambia las viñetas, revisar los ejempls en:  https://developer.mozilla.org/es/docs/Web/CSS/list-style-type */
+/*} comentamos todo para poder hacer otro ejemplo con las ul*/
+
+ul{
+  list-style-type: none;
+  /*estoeliminalasviñetas*/background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0px; /* en este caso quitamos el padding aqui para que border botom cerrara las listas */
+  
+}
+
+li{
+  border-bottom: solid 1px #ddd;
+  padding: 15px;
+}

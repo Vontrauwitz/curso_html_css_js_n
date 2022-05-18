@@ -1,0 +1,29 @@
+body{
+    background-color: #eee;
+}
+p{
+ color:blue;   /*tambien podemos poner colores con nombres y no solo hexadecimal los ultimos hay mas variedad*/
+ text-align: left;  /*sirve para alienar el texto center, right, left es por default, justify etc.*/
+ text-decoration: underline; /*ver abajo*/
+ text-indent: 40px;/*sangria y le pones el num de px*/
+ line-height: 1.7; /*el espaciado de los renglones no abusar de eso entre 1.7 y 1.5 se ve bien*/
+ word-spacing: 10px; /*ajusta la separación d epalabras en px*/
+ text-shadow: 1px 2px 2px red;/*esto crea una "sombra" desplazando una imagen igual, la primera es lo que se dezplaza hacia la derecha, la seguna hacia abajo, hay una tercera que tan difuminado o difuso de ve el texto y al final va el color de la "sombra"*/
+}
+a{
+ text-decoration: none;  /*tiene none,overline, line-through,etc si esta definifo antes no se puede quitar despues en otro comando pero se pueden sumar https://developer.mozilla.org/es/docs/Web/CSS/text-decoration */
+ text-transform: capitalize; /*uppercase mayusculas, lower case minusculas,capitalize la primera mayuscula, etc https://developer.mozilla.org/es/docs/Web/CSS/text-transform */
+ letter-spacing: 3px; /*separa las letas el # de px que queramos*/
+}
+ div{
+ font-family: "times new roman"; /*es para cambiar el tipo de fuente hay problemas de compatibilidad en algunos sistemas times new roman es la mas estandard*/
+ font-weight: 100; /*hay de 100 a 900 de 100 en 100 y es el grado de bold*/
+ font-style: oblique; /* es italic, obliqie, y normal, https://developer.mozilla.org/es/docs/Web/CSS/font-style */
+ font-size: 1.5em; /* se usa para el tamaño de la fuente, se mide en pixeles o en em, em (unidad configurada en el explorador web, prefieren muchos usarla por que el usuario puede configurar la fuente y va a ir creciendo de manera proporcional 1 em en los exploradores web son 16 px pero dependera de como lo configuro el usuario*/
+ color:blue;   
+ text-align: left; 
+ text-indent: 40px;
+ line-height: 1.0; 
+ word-spacing: 10px; 
+ text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);/*tip: si aqui usamos rgba(red, green, blue, alpha) 0,0,0 los primeros seria negro y el ultimo el porcentaje de transparencia https://www.w3schools.com/cssref/func_rgba.asp */
+}
