@@ -1,3 +1,21 @@
 body{
     background-color: #eee;
 }
+
+img {
+    float: left; /* float hace que la el elemento en este caso una imagen se acomode del lado izq o der permitiendo al texto que se acomode al lado de la imagen, aunque el elemento es removido del flujo normal de la pagina, aun sigue siendo parte del flujo. https://developer.mozilla.org/es/docs/Web/CSS/float */
+    opacity: 0.5;
+}
+/* combinaciones de selectores: en este caso, si quieramos seleccionar las p dentro del div pero no la que esta afuera usamos estos*/
+
+div p { /*para hacerlo primero seleccionamos al "padre" seria div, y luego al "hijo" que seria p"*/
+    color: #f00;
+}
+/* opacidad: tiene valores entre 0 y 1, en este caso 0.5 seria 50% 
+muchas veces nostros vamos a usar esa opacidad en hover para que parezca seleccionada cuando pasemos el mouse
+ej:
+img:hover {
+    opacity: 0.5;
+}
+
+*/
