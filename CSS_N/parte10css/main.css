@@ -1,3 +1,10 @@
 body{
     background-color: #eee;
 }
+
+#over{
+    width: 100px;
+    height: 100px;
+    overflow-x: scroll; /* sirve para ajustar el contenido de la caja que marcamos de 100*100px hay visible por defecto, esta se desborda, hidden, oculta lo que sobra, scroll nos da una barra para ver el contenido y auto agrega el scroll solo si es necesario puede agregar vertical y horizontal https://developer.mozilla.org/es/docs/Web/CSS/overflow */ 
+/*existen varias pero las vistas son overflow, overflow-x, que en este caso te fuerza el scroll en plano x, overflow-y, en este caso lo fuerza en plano y, ojo: no funciona en auto solo en scroll.*/
+}
