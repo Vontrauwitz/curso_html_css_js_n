@@ -19,7 +19,7 @@ body{
 }
 
 .dropdown-content{
-    display: block; /* con none se eliminan los links (se ocultan) lamentablemente si utilizo la propiedad de display none en este caso yo no voy a poder ver que es lo que estoy haciendo mientras trabajas lo dejas en display block */
+    display: none; /* con none se eliminan los links (se ocultan) lamentablemente si utilizo la propiedad de display none en este caso yo no voy a poder ver que es lo que estoy haciendo mientras trabajas lo dejas en display block */
     position: absolute; /* recordando posicion absoluta esta es respecto al padre que tiene esto va a hacer que los elementos colapsen donde estan los links ? esto se vera mas adelante, recordar cuando vayamos a hacer un contenido que vaya a esta adyacente a este contenido lo mejor es usar la psición de absolute*/
     background-color: #f9f9f9;
     min-width: 160px;
@@ -39,6 +39,9 @@ body{
 }
 
 .dropdown:hover .dropdown-btn{
-    background-color: #3e8e41; /* esto hace que se "ilumine" cuando pasamos el mouse pero investigar mas el boton dentro del div, entiendo que hay 2 divs uno con un elemento boton y otro con 3 links */
+    background-color: #3e8e41; /* esto hace que se "ilumine" cuando pasamos el mouse pero investigar mas el boton dentro del div, entiendo que hay 2 divs uno con un elemento boton y otro con 3 links, ya entiendo mi error hay un div que tiene un boton y un div el cual tiene 3 links, por lo tanto aqui elige el .dropdown que es el div papa que tiene todos los elementos y hace hoover, pero solo va a cambiar el color de dropdown-btn, eso entiendo yo, necesitamos practicar mas */
+
 }
-dropdown:hover 
+.dropdown:hover .dropdown-content { /*cuando yo pase por el div que tiene todos los elementos (papa) osea dropdown va hacer hoover, pero va a aplicar el display solo a dropdown-content que es el div que tiene los 3 links, eso entiendo yo. */
+    display: block;
+}
