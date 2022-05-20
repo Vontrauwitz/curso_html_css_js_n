@@ -1,0 +1,40 @@
+float{
+    background-color: #eee;
+}
+
+ul{ /*esto es para darle estilo a la lista en general*/
+    list-style-type: none; /*con esto eliminamos los puntos por que no nos sirven para el menu */
+    margin: 0; /*reeiniciamos el margen a "0" */
+    padding: 0; /*reeiniciamos el padding a "0" */
+    overflow: hidden; /*ponemos esto por si hubiera un contenido que se nos escapara de la lista no mostrarlo */
+    position: fixed; /* posicion fija para que no se mueva y se vayan agregando */
+    top: 0; /* para que se quede pegado al techo de la pagina */
+    left: 0; /* esto es por que nos estba dando un 8 y menos 8 en cada lado por la positon, con esto lo quitamos */  
+    width: 100%; /*antes de esto, estba confinado a un pequeño espacio */
+    background-color: #333 ; /*para no perdernos tanto le ponemos a la lista un color de fondo */
+}
+
+li{ /*esto es para darle estilo a los elementos de la lista */
+    float: left; /* esto es para que los elementos vayan a la izq pegaditos, podriamos utilizar display inline */
+}
+
+li a { /* ahora hay que darle estilo a los links que se encuentran dentro de nuestra barrita de navegación*/
+    display: block; /* ??? */
+    color: white; /* lo ponemos el texto blanco depues tendra sentido cuando cambiemos el fondo de la barra */
+    text-align: center; /* esto es para centrar el texto */ 
+    padding: 14px; /*este pading los va a separar un poco */
+    text-decoration: none; /*como son linck van a estar subrayados y se lo quitamos con esto */
+}
+    
+li:hover{ /*le damos un hoover a los elementos para poder poner un color mas obscuro o mas claro y me de la sensción de que es un boton */
+    background-color: rgba(0, 0, 0, 0.3); /*usamos la propiedad rgba para la transparecia en este caso es un fondo negro pero que sea transparente da la sensación que estamos listos par pincharlo*/
+}
+
+.active { /*agregamos una clase de activo ?*/
+    background-color: #4CAF50;
+
+}
+
+.content{
+    margin-top: 55px; /* al hacer esto el lalala ya se ve abajo de la barra ojo: podemos desplazarlo mas solo que sea mayor a los 47 px*/
+}
