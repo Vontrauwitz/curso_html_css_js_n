@@ -43,5 +43,5 @@ body{
 
 }
 .dropdown:hover .dropdown-content { /*cuando yo pase por el div que tiene todos los elementos (papa) osea dropdown va hacer hoover, pero va a aplicar el display solo a dropdown-content que es el div que tiene los 3 links, eso entiendo yo. */
-    display: block;
+    display: block; /*con etso ya tenemos el comportamoento de que cuando paso el boton me muestra el contenido */
 }

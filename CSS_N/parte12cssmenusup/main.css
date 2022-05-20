@@ -1,4 +1,4 @@
-float{
+body{
     background-color: #eee;
 }
 
@@ -19,7 +19,7 @@ li{ /*esto es para darle estilo a los elementos de la lista */
 }
 
 li a { /* ahora hay que darle estilo a los links que se encuentran dentro de nuestra barrita de navegación*/
-    display: block; /* ??? */
+    display: block; /* ??? es para la que esten visibles los a´s o los tipos boton del menu fijo*/
     color: white; /* lo ponemos el texto blanco depues tendra sentido cuando cambiemos el fondo de la barra */
     text-align: center; /* esto es para centrar el texto */ 
     padding: 14px; /*este pading los va a separar un poco */
