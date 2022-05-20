@@ -1,0 +1,44 @@
+body{
+    background-color: #eee;
+}
+
+
+.dropdown-btn{  /* esta es la clase de boton que pusimos hay que darle forma */
+    background-color: #4caf50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; /* cuando estemos viendo la propiedad de cursor podemos asignarle el valor de pointer, y va a hacer que cuando pasemos el mouse por encima se haga salga el manito https://developer.mozilla.org/es/docs/Web/CSS/cursor */
+}
+
+.dropdown{
+   position: relative;
+   display: inline-block; /*https://developer.mozilla.org/es/docs/Web/CSS/display */
+
+}
+
+.dropdown-content{
+    display: block; /* con none se eliminan los links (se ocultan) lamentablemente si utilizo la propiedad de display none en este caso yo no voy a poder ver que es lo que estoy haciendo mientras trabajas lo dejas en display block */
+    position: absolute; /* recordando posicion absoluta esta es respecto al padre que tiene esto va a hacer que los elementos colapsen donde estan los links ? esto se vera mas adelante, recordar cuando vayamos a hacer un contenido que vaya a esta adyacente a este contenido lo mejor es usar la psición de absolute*/
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2); /*recordar x,y,blur radius y color https://developer.mozilla.org/es/docs/Web/CSS/box-shadow */
+
+}
+
+.dropdown-content a { /* aqui queremos los a dentro de dropdown-content */
+    color: black;
+    padding: 12px 16px; /*nueva sintaxis de padding (x= espaciado arriba y abajo e y= espaciado izq y der) es para cuando necesitamos que los paddings tengan distinto tamaño*/
+    text-decoration: none; /* le quitamos el estilo a los links */
+    display: block; /*aqui ya bajan los elementos para el dropdpwn menu */
+}
+
+.dropdown-content a:hover { /* con este selector indicamos que todos los links que estan dentro de drop-down content al momento de hacer hoover (osea cuando pasemos el mouse po encima) agregale la siguiente propiedad de css */
+    background-color: #f1f1f1; /* esto hace que cada link se "ilumine" cuando pasamos el mouse */
+}
+
+.dropdown:hover .dropdown-btn{
+    background-color: #3e8e41; /* esto hace que se "ilumine" cuando pasamos el mouse pero investigar mas el boton dentro del div, entiendo que hay 2 divs uno con un elemento boton y otro con 3 links */
+}
+dropdown:hover 
