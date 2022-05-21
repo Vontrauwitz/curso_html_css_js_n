@@ -1,0 +1,58 @@
+body{
+    background-color: #eee;
+}
+
+input[type="text"]{ /*esto es nuevo y se usa para selecionar campos que tengan un a propiedad en especifico y que esta tenga un valor(investigar esto)*/
+    width: 100%;
+    padding: 12px 20px;/*y y x recordar esta al revés */
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box ; /* esto es para que se quede dentro de la ventana el 100%, checar esto en mozilla */
+    background-color: #eee; 
+    
+}  
+
+input[type="submit"] {
+    /*pudimos crearlo con uu boton. pero asi vemos la opcion de imput type submit*/
+    width: 100%;
+    background-color: #4caf50;
+    color:white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none ;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+   
+} 
+
+.box{
+    background-color: white;
+    margin: 8px 0px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.1) /*checar los valores*/
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;/*y y x recordar esta al revés */
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    background-color: #eee; 
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none; /* no la hemos visto pero es apra evitar modificar por el usuario el text area */
+} /* https://www.estilorama.com/seccion/5/id_cat,3/id,38/evitar-la-modificacion-del-tamano-en-un-textarea#:~:text=Evitar%20textarea%20redimensionable,none%3B%20al%20selector%20CSS%20apropiado.*/
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
